@@ -1,0 +1,45 @@
+#
+# Use this configuration file to control what RobotPy packages are installed
+# on your robot. At the time of creation, Alpha-8 had just release but since the
+# other modules/drivers used may not yet be compatible with Alpha-8, I decided to=
+# stick with Alpha-7 for now.  This will be updated to Alpha-8 when the other modules/drivers are compatible.
+#
+# NOTE: The [project] section below was added to the Tuner-X generated pyproject.toml file to allow this
+#       for the following command to install robotpy with the command:  uv sync --prerelease=allow
+#
+[project]
+name = "2027-tuner-x"
+version = "2027.0.0.1"
+description = "Python helper library focused on the CyberJagzz FRC Team 6107 robot requirements"
+dependencies = [
+    "robotpy == 2027.0.0a7",
+]
+
+[tool.robotpy]
+
+# Version of robotpy this project depends on
+robotpy_version = "2027.0.0a7"
+
+# Which optional robotpy components should be installed?
+# -> equivalent to `pip install robotpy[extra1, ...]
+components = [
+    # "all",
+    # "apriltag",
+    "commands2",
+    # "cscore",
+    # "romi",
+    "sim",
+    # "xrp",
+]
+
+# Other pip packages to install (including vendor packages)
+requires = [
+    "phoenix6~=26.70a2",
+    # "photonlibpy",
+    # "robotpy-ctre",  # Phoenix 5
+    # "robotpy-navx",
+    # "robotpy-pathplannerlib",
+    # "robotpy-playingwithfusion",
+    # "robotpy-rev",
+    # "sleipnirgroup-choreolib",
+]

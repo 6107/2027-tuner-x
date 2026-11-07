@@ -1,0 +1,8 @@
+.venv/
+
+/logs/
+/ctre_sim/
+/networktables.json
+/simgui.json
+/simgui-ds.json
+/simgui-window.json
